@@ -5,21 +5,21 @@
 class Hero < Formula
   desc "Spec-driven AI engineering workflow"
   homepage "https://github.com/bdwheeler/hero"
-  version "0.1.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bdwheeler/hero/releases/download/v0.1.0/hero_0.1.0_darwin_amd64.tar.gz"
-      sha256 "37c4b3a493e3b3187015cd9c338a27c8e54890f627a7277cd6f98fd93bded8f8"
+      url "https://github.com/bdwheeler/hero/releases/download/v0.3.0/hero_0.3.0_darwin_amd64.tar.gz"
+      sha256 "d75503355a920e406676e83f5aec68e42a6ec05c22fafa5852ecb9f200b494b7"
 
       define_method(:install) do
         bin.install "hero"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bdwheeler/hero/releases/download/v0.1.0/hero_0.1.0_darwin_arm64.tar.gz"
-      sha256 "08c8e94d7dd796f24af3cd4ab0205e3cf038fbae9a1553b502e3c7b629edf5f1"
+      url "https://github.com/bdwheeler/hero/releases/download/v0.3.0/hero_0.3.0_darwin_arm64.tar.gz"
+      sha256 "3f3ae18f9a1255aa785cccb3f2770818b9824e6ec5458bd727688634d24d60bb"
 
       define_method(:install) do
         bin.install "hero"
@@ -29,15 +29,15 @@ class Hero < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bdwheeler/hero/releases/download/v0.1.0/hero_0.1.0_linux_amd64.tar.gz"
-      sha256 "9a4f7d10ab4ee3c51edeabd7f1b31357dd855e3a269ba216656e9235ab756886"
+      url "https://github.com/bdwheeler/hero/releases/download/v0.3.0/hero_0.3.0_linux_amd64.tar.gz"
+      sha256 "cb411c328cb4fb7e43b0c213145dc39281c038eac5b9bfc723bd701df0b49b91"
       define_method(:install) do
         bin.install "hero"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bdwheeler/hero/releases/download/v0.1.0/hero_0.1.0_linux_arm64.tar.gz"
-      sha256 "5f87fd62d251070457cf509c76bb98512c0caa42b9020769763f7d38a2f1b956"
+      url "https://github.com/bdwheeler/hero/releases/download/v0.3.0/hero_0.3.0_linux_arm64.tar.gz"
+      sha256 "d602d793680f3128d36641bf5292d90c4139f885406f5ecfae8c61a3e3d5c1c4"
       define_method(:install) do
         bin.install "hero"
       end
