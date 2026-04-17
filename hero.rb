@@ -5,21 +5,21 @@
 class Hero < Formula
   desc "Spec-driven AI engineering workflow"
   homepage "https://github.com/bdwheeler/hero"
-  version "0.3.0"
+  version "0.5.14"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bdwheeler/hero/releases/download/v0.3.0/hero_0.3.0_darwin_amd64.tar.gz"
-      sha256 "d75503355a920e406676e83f5aec68e42a6ec05c22fafa5852ecb9f200b494b7"
+      url "https://github.com/bdwheeler/hero/releases/download/v0.5.14/hero_0.5.14_darwin_amd64.tar.gz"
+      sha256 "25a35c8ae596dcfad05ecb30885bea8cba76448f74e69f1999754ffe99ec7998"
 
       define_method(:install) do
         bin.install "hero"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bdwheeler/hero/releases/download/v0.3.0/hero_0.3.0_darwin_arm64.tar.gz"
-      sha256 "3f3ae18f9a1255aa785cccb3f2770818b9824e6ec5458bd727688634d24d60bb"
+      url "https://github.com/bdwheeler/hero/releases/download/v0.5.14/hero_0.5.14_darwin_arm64.tar.gz"
+      sha256 "dc5236ba1d51eb9fac3e1c1a4b54ebefde867d0108f557e277b3a92bd5837663"
 
       define_method(:install) do
         bin.install "hero"
@@ -29,15 +29,15 @@ class Hero < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bdwheeler/hero/releases/download/v0.3.0/hero_0.3.0_linux_amd64.tar.gz"
-      sha256 "cb411c328cb4fb7e43b0c213145dc39281c038eac5b9bfc723bd701df0b49b91"
+      url "https://github.com/bdwheeler/hero/releases/download/v0.5.14/hero_0.5.14_linux_amd64.tar.gz"
+      sha256 "6db9805e91a9390afe2f1ba21480d574ccb3e687beca0ffb28c86d3b80eb5e71"
       define_method(:install) do
         bin.install "hero"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bdwheeler/hero/releases/download/v0.3.0/hero_0.3.0_linux_arm64.tar.gz"
-      sha256 "d602d793680f3128d36641bf5292d90c4139f885406f5ecfae8c61a3e3d5c1c4"
+      url "https://github.com/bdwheeler/hero/releases/download/v0.5.14/hero_0.5.14_linux_arm64.tar.gz"
+      sha256 "8feca0c6c59426075d5d404e9d134588befd819e4cec3723cdbe92644cfea007"
       define_method(:install) do
         bin.install "hero"
       end
