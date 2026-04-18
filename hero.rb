@@ -11,7 +11,7 @@ class Hero < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/bdwheeler/hero/releases/download/v0.5.14/hero_0.5.14_darwin_amd64.tar.gz"
-      sha256 "640f5456d27a33850271580168646e549cd71ef2751a3bfe1280bc35168dc6c3"
+      sha256 "12bfacb9a59ffabd1aa76f2a6e47269d146da5888e25572648df2e235c7e53c5"
 
       define_method(:install) do
         bin.install "hero"
@@ -19,7 +19,7 @@ class Hero < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/bdwheeler/hero/releases/download/v0.5.14/hero_0.5.14_darwin_arm64.tar.gz"
-      sha256 "762f4772264a7fab88ea2ac85c1c5337b766776f7e92d522e2f6bd18243dc27e"
+      sha256 "6608e4d35106e26a3b3e620a440d22e41af4a98904b0fc35c4264ec339b89347"
 
       define_method(:install) do
         bin.install "hero"
@@ -30,14 +30,14 @@ class Hero < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/bdwheeler/hero/releases/download/v0.5.14/hero_0.5.14_linux_amd64.tar.gz"
-      sha256 "fe6d78371c53b21462c377695a8ee0cf4f64c88b1a477e073e64e0ef336ac704"
+      sha256 "cdaca9f228d2b299c10fbaa43e46592bf1c8bde72a68438864aef177eb7761d8"
       define_method(:install) do
         bin.install "hero"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/bdwheeler/hero/releases/download/v0.5.14/hero_0.5.14_linux_arm64.tar.gz"
-      sha256 "18c8e6e9c0753afffec855acbc865b8de4ad6859fa6ea8156f1154f61d0441c0"
+      sha256 "94225b7abf7d008854d8d474cfa8ea2663b6a7b11236dd7f3f10c7d16a8dbfd4"
       define_method(:install) do
         bin.install "hero"
       end
